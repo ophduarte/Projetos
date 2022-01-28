@@ -1,0 +1,10 @@
+/* estiliza todas as tags "a", ou seja, links */
+a {
+  /* para cor preta  */
+  color: black;
+
+  /* e sem sublinhado  */
+  text-decoration: none;
+
+  /* Dessa forma, os link ques estão na página index são da cor preta e sem sublinhado */
+}

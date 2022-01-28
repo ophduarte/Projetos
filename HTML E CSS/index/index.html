@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Definr UTF-8-->
+    <meta charset="UTF-8">
+
+    <!--Título na aba do navegador-->
+    <Title> CARROS E BICICLETAS </Title>
+
+    <!-- linkar com o arquivo de CSS na mesma pasta que o index -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <!-- Cria um cabeçalho h1 com nome texto  -->
+    <h1 id="texto"> CARROS E BICICLETAS </h1>
+
+    <!-- tag CSS-->
+    <style>
+        h1 {
+            color: rgb(98, 0, 255);
+        }
+    </style>
+
+    <!-- tag JavaScript-->
+    <script>
+
+        function mudar() {
+            texto.style.color = "red";
+        }
+
+        texto.addEventListener("click", mudar);
+
+    </script>
+
+    <a href="Produtos/carros.html"> CARROS </a></br>
+    <a href="/Produtos/bicicletas.html"> BICICLETAS </a>
+
+</body>
+
+
+</html>
