@@ -1,0 +1,178 @@
+/* formatar a região do corpo de uma forma geral */
+body {
+  /* definir font para Arial, caso não tiver, usar Helvetica ou sans-serif  */
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* retirar a borda que vem de padrão do BODY */
+  margin: 0%;
+
+  /* definir cor de fundo da página */
+  background: #f1e8e8;
+
+  /* organizar página em grid */
+  display: grid;
+
+  /* definir espaçamento do grid */
+  gap: 60px;
+
+  /* alinhar o grid ao centro */
+  justify-items: center;
+
+  /* adicionar uma margem do topo */
+  margin-top: 60px;
+}
+
+/* formatar imagens gerais */
+img {
+  /* definir que a imagem não quebre o limite máximo da página   */
+  max-width: 100%;
+
+  /* definir imagem como um bloco */
+  display: block;
+}
+
+/* formatar os links em geral */
+a {
+  /* retirar sublinhado do link */
+  text-decoration: none;
+}
+
+/* formatar parágrafos e títulos */
+p,
+h1,
+h2,
+h3 {
+  /* retirar as margins padrões  */
+  margin: 0px;
+}
+
+/* definir os parágrafos */
+p {
+  /* tamanho da fonte */
+  font-size: 20px;
+
+  /* altura da caixa da linha */
+  line-height: 1.3;
+}
+
+/* formatar o menu */
+.menu {
+  /* formatar para flex, ou sejam, basicamente deixar tudo na mesma linha */
+  display: flex;
+
+  /* permitir que os containers quebrem para as proximas linhas */
+  flex-wrap: wrap;
+
+  /* distanciar os containers do menu */
+  gap: 20px;
+
+  /* alinhar ao meio depois de quebra as linhas */
+  justify-content: center;
+}
+
+/* formatar os botõezinhos de link no menu */
+.menu a {
+  /* definir cor do fundo */
+  background: #fff;
+
+  /* espaçamento das bordas internas */
+  padding: 15px 30px;
+
+  /* arredondamento das bordas */
+  border-radius: 4px;
+
+  /* tamanho, tipo e cor da borda   */
+  border: 2px solid rgb(245, 242, 242);
+
+  /* cor da fonte */
+  color: #000000;
+
+  /* deixa o texto em maiúsculo */
+  text-transform: uppercase;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+}
+
+.sobre {
+  background: #ffffff;
+  padding: 40px;
+  text-align: right;
+  position: relative;
+  display: grid;
+  align-content: center;
+  gap: 20px;
+  justify-items: end;
+}
+
+.sobre a {
+  background: rgb(204, 46, 31);
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.detalhe {
+  width: 60px;
+  height: 4px;
+  background: rgb(204, 46, 31);
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.hutao {
+  max-width: 80%;
+  justify-self: center;
+}
+
+.skills {
+  font-size: 64px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: right;
+  padding: 40px;
+  align-self: center;
+}
+
+.skillset {
+  background: #fff;
+  padding: 40px;
+}
+
+.skills-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 10px;
+}
+
+.skills-item p {
+  grid-column: 2;
+}
+
+.rodape {
+  width: 100%;
+  text-align: center;
+  background: rgb(112, 31, 31);
+  color: #ffffff;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: 25px;
+  align-self: center;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.titulo h2 {
+  color: rgb(184, 49, 49);
+}
