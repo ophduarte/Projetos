@@ -91,88 +91,181 @@ p {
   text-transform: uppercase;
 }
 
+/* formatar o conteúdo da página */
 .conteudo {
+  /* organizarem grid */
   display: grid;
+
+  /* formatar para organizar em duas colunas com tamanhos igualmente espaçados  */
   grid-template-columns: 1fr 1fr;
+
+  /* tamanho máximo */
   max-width: 1000px;
 }
 
+/* formatar o sobre */
 .sobre {
+  /* cor de fundo */
   background: #ffffff;
+
+  /* borda interna */
   padding: 40px;
+
+  /* texto alinhado ao centro */
   text-align: right;
+
+  /* definir que a posição do container é relativo */
   position: relative;
+
+  /* organizar em grid */
   display: grid;
+
+  /* centralizar o container ao centro */
   align-content: center;
+
+  /* espaçamento entro os containers */
   gap: 20px;
+
+  /* centralizar os containers a direita */
   justify-items: end;
 }
 
+/* formatar o link de saiba mais  */
 .sobre a {
+  /* cor de fundo */
   background: rgb(204, 46, 31);
+
+  /* cor da fonte */
   color: #ffffff;
+
+  /* borda interna */
   padding: 15px 30px;
+
+  /* arredondamento da borda */
   border-radius: 4px;
+
+  /* texto em maiúsculo */
   text-transform: uppercase;
 }
 
+/* formatar o detalhezinho decorativo */
 .detalhe {
+  /* largura do traço */
   width: 60px;
+
+  /* altura do traço */
   height: 4px;
+
+  /* cor do traço */
   background: rgb(204, 46, 31);
+
+  /* definir que a posição do traço seja acima de tudo */
   position: absolute;
+
+  /* distanciamento do top em relação do container sobre, pois sobre esta com posição relativa */
   top: 30px;
+
+  /* distanciamento da direita em relação ao container sobre, invadir um pouco o espaço da imagem a direita */
   right: -30px;
 }
 
+/* formatar imagem grande */
 .hutao {
+  /* diminuir o tamanho */
   max-width: 80%;
+
+  /* centralizar a imagem dentro do grid */
   justify-self: center;
 }
 
+/* formatar o titulo avulso */
 .skills {
+  /* tamanho da fonte */
   font-size: 64px;
+
+  /* texto maiúsculo */
   text-transform: uppercase;
+
+  /* definir a cor, com transparência */
   color: rgba(0, 0, 0, 0.2);
+
+  /* alinhamento do texto */
   text-align: right;
+
+  /* borda interna */
   padding: 40px;
+
+  /* alinhar o container ao centro */
   align-self: center;
 }
 
+/* formatar a região de mais detalhes */
 .skillset {
+  /* cor de fundo */
   background: #fff;
+
+  /* borda interna */
   padding: 40px;
 }
 
+/* formatar os itens dos detalhes */
 .skills-item {
+  /* formaar em grid */
   display: grid;
+
+  /* definir 2 colunas de grid */
   grid-template-columns: auto 1fr;
+
+  /* espaçamento entre os containers */
   gap: 10px 20px;
+
+  /* borda interna */
   padding: 10px;
 }
 
+/* formatar o texto dos detalhes para que fique na segunda coluna do grid */
 .skills-item p {
   grid-column: 2;
 }
 
+/* formatar rodapé */
 .rodape {
+  /* tamanho de 100% da tela, porém estoura e aparece uma barrinha para ir pro lado */
   width: 100%;
+
+  /* alinhamento do texto ao centro */
   text-align: center;
+
+  /* cor de fundo */
   background: rgb(112, 31, 31);
+
+  /* cor do texto */
   color: #ffffff;
+
+  /* borda interna */
   padding: 40px;
+
+  /* tirar o estouro do tamanho para não ter mais a barrinha de ir para o lado */
   box-sizing: border-box;
 }
 
+/* formatar um dos tipos de títulos */
 h3 {
+  /* tamanho de fonte */
   font-size: 25px;
+
+  /* alinha o container ao centro */
   align-self: center;
 }
 
+/* formatar o titulo da página */
 .titulo {
+  /* centralizar os textos de título e subtítulo ao centro */
   text-align: center;
 }
 
+/* formatar subtítulo */
 .titulo h2 {
+  /* cor do texto */
   color: rgb(184, 49, 49);
 }
